@@ -1,0 +1,31 @@
+{
+  "agents": {
+    "defaults": {
+      "model": {
+        "primary": "groq-llama3"
+      }
+    }
+  },
+  "models": {
+    "providers": {
+      "groq": {
+        "api_key": "${GROQ_API_KEY}",
+        "models": {
+          "groq-llama3": "llama3-8b-8192",
+          "groq-llama3-70b": "llama3-70b-8192"
+        }
+      },
+      "gemini": {
+        "api_key": "${GEMINI_API_KEY}",
+        "models": {
+          "gemini-flash": "gemini-1.5-flash"
+        }
+      }
+    }
+  },
+  "channels": {
+    "telegram": {
+      "bot_token": "${TELEGRAM_BOT_TOKEN}"
+    }
+  }
+}

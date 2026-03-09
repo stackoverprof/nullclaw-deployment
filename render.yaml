@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: nullclaw-bot
+    env: docker
+    region: oregon
+    plan: free # Render's free tier for web services
+    envVars:
+      - key: GROQ_API_KEY
+        sync: false # Set this securely in the Render Dashboard
+      - key: GEMINI_API_KEY
+        sync: false # Set this securely in the Render Dashboard
+      - key: TELEGRAM_BOT_TOKEN
+        sync: false # Set this securely in the Render Dashboard

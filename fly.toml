@@ -1,0 +1,10 @@
+app = "nullclaw-bot-agent"
+primary_region = "iad"
+
+[build]
+  dockerfile = "Dockerfile"
+
+[env]
+  # Don't put sensitive API keys here.
+  # Use: fly secrets set GROQ_API_KEY="your-key" TELEGRAM_BOT_TOKEN="your-token"
+  PORT = "8080"
