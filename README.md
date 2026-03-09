@@ -20,12 +20,16 @@ You have several free options. **Fly.io** and **Render** are the easiest because
 ### Option A: Deploy to Render (Easiest)
 
 Render offers a permanent free tier for Web Services.
+We have set up a GitHub repository for you. Click the button below to deploy:
 
-1. Push this directory to a private GitHub repository.
-2. Go to [Render Dashboard](https://dashboard.render.com).
-3. Click **New** -> **Blueprint**.
-4. Connect the GitHub repository. Render will automatically read the `render.yaml` file.
-5. In your Render Dashboard, go to your new service's **Environment** tab and explicitly add the `GROQ_API_KEY` (and `TELEGRAM_BOT_TOKEN` if you configured a channel).
+[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/stackoverprof/nullclaw-deployment)
+
+Alternatively, you can do it manually:
+
+1. Go to [Render Dashboard](https://dashboard.render.com).
+2. Click **New** -> **Blueprint**.
+3. Connect the GitHub repository. Render will automatically read the `render.yaml` file.
+4. In your Render Dashboard, go to your new service's **Environment** tab and explicitly add the `GROQ_API_KEY` (and `TELEGRAM_BOT_TOKEN` if you configured a channel).
 
 ### Option B: Deploy to Fly.io
 
